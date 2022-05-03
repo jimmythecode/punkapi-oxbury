@@ -12,8 +12,7 @@ This is a simple create-react-app built to demonstrate development practices usi
 - msw for mocking server calls during testing
 
 ## The Task Brief:
-- [X] Implement a simple/slim front-end that:
-  - [X] Integrates with API from provided link below:
+- [X] Implement a simple/slim front-end that integrates with API from provided link below:
 § https://punkapi.com/documentation/v2
 
 - [X] Has a list/page of beer items.
@@ -21,7 +20,7 @@ This is a simple create-react-app built to demonstrate development practices usi
 - [X] List component should support pagination so we can navigate through list pages.
 - [X] Each item in a list should have such information: name, abv, volume and up to 3 ingredient list names
 
-  [X] Extra / Bonus Points
+- [X] Extra / Bonus Points
   - [X] Implement search component to search through all beers by their name
   - [X] Elements could be clickable. In the detailed view, more information should be shown (image, name, abv, volume, description, ingredients, food pairing and brewers tips)
 
