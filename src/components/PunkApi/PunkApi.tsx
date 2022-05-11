@@ -100,7 +100,7 @@ function PunkApi() {
 
 				<tbody>
 					{apiData.slice(0 + (page - 1) * 15, 15 + (page - 1) * 15).map((curBeerRow, index) => (
-						<tr key={curBeerRow.name}>
+						<tr key={curBeerRow.name} data-testid={`table-body-row${index}`}>
 							<td data-testid={`table-body-cell${index}`}>{curBeerRow.name}</td>
 							<td>{curBeerRow.abv}</td>
 							<td>
@@ -133,7 +133,7 @@ function PunkApi() {
 				</tbody>
 			</table>
 			<br />
-			{initialApiData.length > 0 && apiData.length === 0 && <p>No matching results. Try expnding the filters.</p>}
+			{initialApiData.length > 0 && apiData.length === 0 && <p>No matching results. Try expanding the filters.</p>}
 			{fetchTimestamp.length === 0 && <Loading />}
 			{apiError && <Error />}
 			<br />
